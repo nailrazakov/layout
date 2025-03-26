@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+     <!-- Подключение локальных файлов стилей Bootstrap -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <h1 class="visually-hidden">Меню</h1>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"/>
+            </svg>
+            <span class="fs-4">Меню</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white" aria-current="page">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#home"/>
+                    </svg>
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"/>
+                    </svg>
+                    Категории
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link active">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#table"/>
+                    </svg>
+                    Заказы
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"/>
+                    </svg>
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+               id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../static/user.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>Пользователь</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+        <div class="col-9 mt-5 p-3">
+            <h1 class="text-center">Категория</h1>
+
+            <div class="row justify-content-center">
+
+
+
+                 <div class="col-4 mt-5">
+                     <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal"> Монитор</h4>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title">$100</h2>
+                                <p>
+                                    Радуга
+                                </p>
+                                <button type="button" class="btn btn-success w-100 btn btn-lg btn-outline-primary">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-4 mt-5">
+                     <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal"> Клавиатура</h4>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title">$10</h2>
+                                <p>
+                                    Печатница
+                                </p>
+                                <button type="button" class="btn btn-success w-100 btn btn-lg btn-outline-primary">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                </div>
+
+                 <div class="col-4 mt-5">
+                     <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Компьютер</h4>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title">$1000</h2>
+                                <p>
+                                   Горыныч
+                                </p>
+                                <button type="button" class="btn btn-success w-100 btn btn-lg btn-outline-primary">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-4 mt-5">
+                     <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Мышь оптическая</h4>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title">$1000</h2>
+                                <p>
+                                   Шапокляк
+                                </p>
+                                <button type="button" class="btn btn-success w-100 btn btn-lg btn-outline-primary">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                </div>
+        </div>
+
+
+</main>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
