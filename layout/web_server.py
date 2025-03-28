@@ -39,6 +39,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html')
         self.end_headers()
         response = f"Received POST data: {post_data.decode('utf-8')}"
+        #  печать в консоль всех данных, которые были приняты от пользователя
         print(post_data.decode('utf-8'))
         self.wfile.write(response.encode('utf-8'))
 
@@ -48,7 +49,6 @@ if __name__ == "__main__":
     #  принимать запросы и отправлять их на обработку специальному классу, который был описан выше
     webServer = HTTPServer((hostName, serverPort), MyServer)
     print("Server started http://%s:%s" % (hostName, serverPort))
-    print(PATH_TO_FILE)
     try:
         # Cтарт веб-сервера в бесконечном цикле прослушивания входящих запросов
         webServer.serve_forever()
