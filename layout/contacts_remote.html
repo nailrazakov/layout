@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин</title>
-     <!-- Подключение локальных файлов стилей Bootstrap -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/main.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+           main {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 100vh;
+            height: -webkit-fill-available;
+            max-height: 100vh;
+            overflow-x: auto;
+            overflow-y: hidden;
+              }
+    </style>
 </head>
 <body>
 <main>
-    <h1 class="visually-hidden">Меню</h1>
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <svg class="bi me-2" width="40" height="32">
@@ -93,29 +101,27 @@
             <div class="col-6"> <!-- -->
                 <div class="card text-bg-secondary">
                     <div class="card-body">
-                        <form>
+                        <form method="post" action="" class="form-floating">
                             <h2>Оставьте заявку</h2>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" name="name" class="form-control" placeholder="Имя">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
                             </div>
 
                             <div class="mb-3">
-                                <textarea class="form-control" placeholder="Сообщение" rows="3"></textarea>
+                                <textarea class="form-control" name="text" placeholder="Сообщение" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Отправить</button>
                         </form>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </main>
-<script
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
